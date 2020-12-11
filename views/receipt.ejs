@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('lay/header'); -%>
+
+<body>
+    
+    <!-- Preloader starts -->
+   
+   
+    <div class="dark-overlay header-area header-style-3">
+    
+        <div class="container-fluid">
+              <%- include('lay/navbar'); -%>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="logo">
+                        <!--<h1><a href="/">Cooking Blog</a></h1>-->
+                    </div>
+                    
+                    <div class="responsive-menu-wrap"></div>
+                </div>      
+            <div class="row">
+                <div class="col-md-4 col-sm-8">
+                    <div class="hero-text padding-100">
+                        <h1 style = "font-style: italic; font-family: unset; margin-left: 302px ;"><%= receipts.title %></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    
+    <div class="content-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3 style="color: white">Description</h3>
+                    <p style="color: white"><%= receipts.body %></p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="<%= receipts.image %>" alt="" class="img-rounded">
+                </div>
+                <div class="col-md-4">
+                    <h3 style="color: white">Preparation</h3>
+                    <p style="color: white">
+                        <%= receipts.prep %>
+                   </p>
+                    <h4 style="color: white">
+                        Posted by:
+                       
+                    </h4>
+                </div>
+                
+            
+            
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <div class="specer-70"></div>
+                    <div class="section-heading">
+                        <h3 style="color: white">Find more interesting recipes on YouTube</h3>
+                        <p style="color: white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet cumque, mollitia atque nemo maiores, quidem quo perferendis veniam repellat iste cupiditate culpa similique explicabo amet labore nam autem unde dicta!</p>
+                    </div>
+                    
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/166976636?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                    
+                    <div class="cta-style-2"style="color: white">
+                        <p>Get best financial support from the experts</p>
+
+                        <a href="" class="boxed-btn cta-btn-style-2">Get a quote <i class="fa fa-angle-right"></i></a>
+                    </div>
+                    
+                    <div class="text-left" style="color: white">
+                        <p>Cultivated who resolution connection motionless did occasional. Journey promise if it colonel. Can all mirth abode nor hills added. Them men does for body pure. Far end not horses remain sister. Mr parish is to he answer roused piqued afford suspend. It abode words began enjoy years no do ﻿no. Tried spoil as heart visit blush or. Boy possible blessing sensible set but margaret interest. Off tears are day blind smile alone had. </p>
+                    
+                        <p>Connection motionless did occasional. Journey promise if it colonel. Can all mirth abode nor hills added. Them men does for body pure. Far end not horses remain sister. Mr parish is to he answer roused piqued afford suspend. It abode words began enjoy years no do ﻿no. Tried spoil as heart visit blush or. Boy possible blessing sensible set but margaret interest.</p>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div> 
+    
+    <%- include('lay/footer'); -%>
+    <%- include('lay/script'); -%>
+</body>
+</html>

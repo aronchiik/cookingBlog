@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <%- include('lay/header')%>
+
+<body>
+    
+    <!-- Preloader starts -->
+ 
+    <!-- Preloader ends -->
+        
+                    <%- include('lay/navbar'); -%>
+
+    <div class="fullwidth-cotnent-block hero-bg-1">
+        <div class="fullwidth-content-tablecell">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 text-center">
+                        <div class="register-style-1">
+
+                            <div class="register-logo">
+                                <h1><a href="/">Cooking Blog</a></h1>
+                            </div>
+                            <h2>Register now</h2>
+                            <p>Create your account/profile!</p>
+
+
+                            <div class="register-form-style-1">
+                                <form action ="/users/register" method ="POST"
+                                 enctype = "multipart/form-data">
+                                  <% if(typeof (message) !== 'undefined'){ %>
+                                  <p style="color: red"><%= message %></p>
+                                   <% } %>
+                                <p><input type="text" placeholder="Username" name="username" ></p>
+                                <p><input type="password" placeholder="Password" name="password" ></p>
+                                 <p><input type="password" placeholder="Password" name="ConfirmPassword" ></p>
+                                <p><input type="text" placeholder="biography" name="biography" ></p>
+                                <input type="file" class="form-control" id="image" name="image"> 
+                                <p><button type="submit">Login <i class="fa fa-angle-right"></i></button></p>
+                                </form>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>     
+            
+        <%- include('lay/footer'); -%>
+    <%- include('lay/script'); -%>
+</body>
+</html>   

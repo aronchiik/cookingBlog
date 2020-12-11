@@ -1,0 +1,48 @@
+<nav class="header-area wow fadeIn">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="logo">
+                        <h1><a href="/">Cooking Blog</a></h1>
+                    </div>
+                    
+                    <div class="responsive-menu-wrap"></div>
+                </div>
+                
+                <div class="col-md-9">
+                    <div class="mainmenu">
+                        <ul id="navigation">
+                            <li class="current_page_item"><a href="/">Homepages</a>
+                            </li>
+                            <li class="current_page_item"><a href="/about">AboutUs</a>
+                            </li>
+                             <li class="semi-mega-menu"><a href="/receiptsList">Receipts</a>
+                             </li>
+                             <% if(loggedIn){ %>
+                             <li class="mega-menu"><a href="/auth/login">Account</a>
+                                 <ul>
+                                    <li><a href="/auth/profile">User details</a>
+                                    </li>
+                                 </ul>                        
+                            </li> 
+                            <li><a href="/receipts/new">New Rec</a>
+                            </li>
+                            <% } else{ %>
+                            <li><a href="/auth/login">Login</a>
+                            </li>
+                            <% } %>
+                           
+                            <% if(loggedIn){ %>
+                            <li><a href="/logout">Logout</a>
+                            </li>
+                            <% } else { %>
+                              <li><a href="/auth/register">SignUp</a>
+                            </li>
+                            <% } %>
+                            
+                        </ul>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </nav>

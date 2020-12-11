@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('lay/header'); -%>
+<body>
+    
+    <!-- Preloader starts -->
+    <div class="mega-site-preloader-wrap">
+        <div class="cont">
+            <div class="line square"></div>
+            <div class="line square2"></div>
+            <div class="line square3"></div>
+            <div class="line square4"></div>
+        </div>
+    </div>
+    <!-- Preloader ends -->
+
+<%- include('lay/navbar'); -%>
+    <div class="hero-area wow fadeInUp">
+        <div class="homepage-slidesn">
+            <div class="single-slide-item slide-01">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="slide-text" >
+                               <h1 style="color: white ">Cooking Blog</h1>
+                                <p style="color: white ">Light Breakfast or delicious lunch or maybe dinner !? Fast food, last-minute dishes, first and second courses. Salads or fish, chicken, meat products.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="content-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center wow fadeInUp">
+                    <div class="section-heading">
+                        <h2 style="color:black">  LATEST Recomendation  </h2>
+                         <p style="color: black ">Light Breakfast or delicious lunch or maybe dinner !? Fast food, last-minute dishes, first and second courses. Salads or fish, chicken, meat products.</p>
+                    </div>
+                </div>
+            </div>
+
+                <% for (var i = receipts.length-1; i > receipts.length-4; i--) { %>
+<div class="col-lg-4 mb-4">
+    <div class="service-box-bg" style="background-image: url('<%= receipts[i].image %>')"></div>
+<div class="card h-100">
+<h4 class="card-header"><%= receipts[i].title %></h4>
+<div class="card-body">
+<p class="card-text"><%= receipts[i].body %></p>
+</div>
+<div class="card-footer">
+    <p>POSTED BY<span style="color: red; font"><strong> <%= receipts[i].userid.username %></strong></span></p>
+<a href= "/receipt/<%= receipts[i]._id %>" class="btn btn-primary">Learn More</a>
+</div>
+</div>
+</div>
+
+<% } %>
+<div class="spacer-45 hidden-xs"></div>
+
+        
+         </div>
+     </div>
+
+           
+    
+    <%- include('lay/footer'); -%>
+    <%- include('lay/script'); -%>
+
+    
+    
+    
+</body>
+</html>

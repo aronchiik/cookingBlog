@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include('lay/header')%>
+
+<body>
+
+            <%- include('lay/navbar')%>
+            <div class="dark-overlay header-area header-style-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="hero-text padding-100">
+                        <h2>Beautiful story of us</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+    
+    <div class="content-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="<%= user.image %>" alt="">
+                </div>
+                
+                <div class="col-md-5 col-md-offset-1">
+                    <div class="team-desc">
+                        <h2><%= user.username %><span>Founder</span></h2>
+                        <p><%= user.biography %></p>
+
+                    <h1>POSTS OWNED</h1>
+                    <!--<span><p>/p></span>
+-->
+                               
+                        
+                        <div class="social-icons">
+                            <a href="" target="_blank"><i class="fa fa-facebook"></i></a>
+                            <a href="" target="_blank"><i class="fa fa-twitter"></i></a>
+                            <a href="" target="_blank"><i class="fa fa-youtube"></i></a>
+                            <a href="" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    
+    <div class="content-block gray-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3>What I love</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque atque delectus eum alias consequuntur blanditiis officiis illum totam, cumque voluptatibus illo saepe maiores modi eos sunt, fugit fugiat nemo. Vitae.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quibusdam voluptatum consectetur doloribus, omnis veritatis labore dicta! Aliquid cumque modi, molestiae expedita non culpa iste repellat nulla doloribus quasi in, reprehenderit laboriosam ad magni, ipsum maxime veritatis ipsam. Deleniti quibusdam praesentium architecto sint, hic aut quod beatae, quis non iure.</p>
+                </div>
+                   
+                <div class="col-sm-6">
+                    <h3>What I want to get</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quibusdam voluptatum consectetur doloribus, omnis veritatis labore dicta! Aliquid cumque modi, molestiae expedita non culpa iste repellat nulla doloribus quasi in, reprehenderit laboriosam ad magni, ipsum maxime veritatis ipsam. Deleniti quibusdam praesentium architecto sint, hic aut quod beatae, quis non iure.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque atque delectus eum alias consequuntur blanditiis officiis illum totam, cumque voluptatibus illo saepe maiores modi eos sunt, fugit fugiat nemo. Vitae.</p>
+                </div>
+            </div>
+        </div>
+    </div>   
+         
+    <%- include('lay/footer'); -%>
+    <%- include('lay/script'); -%>
+</body>
+</html>   

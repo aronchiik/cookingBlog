@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <%- include('lay/header')%>
+
+<body>
+    
+    <!-- Preloader starts -->
+    <div class="mega-site-preloader-wrap">
+        <div class="cont">
+            <div class="line square"></div>
+            <div class="line square2"></div>
+            <div class="line square3"></div>
+            <div class="line square4"></div>
+        </div>
+    </div>
+    <!-- Preloader ends -->
+                     
+    <%- include('lay/navbar'); -%>
+    
+    <div class="content-block">
+        <div class="container">
+            <h1>ALL RECEIPTS</h1>
+                       <% for (var i = 0; i < receipts.length; i++) { %>
+
+<div class="col-lg-4 mb-4">
+    <div class="service-box-bg" style="background-image: url('<%= receipts[i].image %>')"></div>
+<div class="card h-100">
+<h4 class="card-header"><%= receipts[i].title %></h4>   
+<div class="card-body">
+<p class="card-text"><%= receipts[i].body %></p>
+</div>
+<div class="card-footer">
+  
+<a href= "/receipt/<%= receipts[i]._id %>" class="btn btn-primary">Learn More</a>
+</div>
+</div>
+</div>
+
+<% } %>
+<div class="spacer-45 hidden-xs"></div>
+        </div>
+    </div>
+    
+    <div class="dark-overlay cta-style-3 cta-bg-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2>Get a free quote from our experts</h2>
+                    <h4>Best support you might get from online</h4>
+                    <a href="get-a-quote-1" class="boxed-btn">Get a FREE quote <i class="fa fa-angle-right"></i></a>
+                </div>
+            </div>
+        </div>        
+    </div>  
+    
+    <%- include('lay/footer'); -%>
+    <%- include('lay/script'); -%>
+</body>
+</html>   
